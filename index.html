@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+       <img src="img/logo.png" class="logo">
+       <nav>
+        <ul id="menuList">
+            <li><a href="">Controles do Jogo</a></li>
+            <li><a href="">Acessorios VR</a></li>
+            <li><a href="">Mídia Remota</a></li>
+            <li><a href="">Outros</a></li>
+        </ul>
+       </nav>
+       <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+    <div class="row">
+        <div class="col-1">
+        <h2>PS4 V2<br>Dualshock 4</h2>
+        <h3>Controle sem fio para Playstation</h3>
+        <p>Compatível/Genérico</p>
+        <h4>$32.50</h4>
+        <button type="buttom">Buy Now<img src="img/arrow.png">
+        </button>
+        </div>
+        <div class="col-2">
+            <img src="img/controller.png" class="controller">
+            <div class="color-box"></div>
+            <div class="add-btn"></div>
+            <img src="img/add.png">
+            <p><small>Adicionar ao Carrinho</small></p>
+        </div>
+    </div>
+    </div>
+    <div class="social-links">
+        <img src="img/fb.png" alt="">
+        <img src="img/tw.png" alt="">
+        <img src="img/ig.png" alt="">
+    </div>
+    <script>
+        var menuList = document.getElementByld("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px"
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
